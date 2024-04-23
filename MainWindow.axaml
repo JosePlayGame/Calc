@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="100" d:DesignHeight="150"
+        Width="100"
+        Height="150"
+        x:Class="Calculadora.MainWindow"
+        Title="Calculadora">
+   <StackPanel> 
+          <TextBlock Name="output" Background="Beige" Height="30" FontSize="25"></TextBlock>
+          <TextBlock></TextBlock>
+          <Grid ColumnDefinitions="Auto,Auto,Auto,Auto" RowDefinitions="Auto,Auto,Auto">
+               <Button Name="btn1" Grid.Column="0" Grid.Row="0" Click="bt1Num1_Click" Background="LightCyan" BorderBrush="Black">1</Button>
+               <Button Name="btn2" Grid.Column="1" Grid.Row="0" Click="bt1Num2_Click" Background="LightCyan" BorderBrush="Black">2</Button>
+               <Button Name="btn3" Grid.Column="2" Grid.Row="0" Click="bt1Num3_Click" Background="LightCyan" BorderBrush="Black">3</Button>
+               <Button Name="btn4" Grid.Column="0" Grid.Row="1" Click="bt1Num4_Click" Background="LightCyan" BorderBrush="Black">4</Button>
+               <Button Name="btn5" Grid.Column="1" Grid.Row="1" Click="bt1Num5_Click" Background="LightCyan" BorderBrush="Black">5</Button>
+               <Button Name="btn6" Grid.Column="2" Grid.Row="1" Click="bt1Num6_Click" Background="LightCyan" BorderBrush="Black">6</Button>
+               <Button Name="btn7" Grid.Column="0" Grid.Row="2" Click="bt1Num7_Click" Background="LightCyan" BorderBrush="Black">7</Button>
+               <Button Name="btn8" Grid.Column="1" Grid.Row="2" Click="bt1Num8_Click" Background="LightCyan" BorderBrush="Black">8</Button>
+               <Button Name="btn9" Grid.Column="2" Grid.Row="2" Click="bt1Num9_Click" Background="LightCyan" BorderBrush="Black">9</Button>
+               <Button Name="sum" Grid.Column="4" Grid.Row="0" Click="btnSum_Click" Background="LightCyan" BorderBrush="Black">+</Button>
+               <Button Name="equals" Grid.Column="4" Grid.Row="3" Click="btnEquals_Click" Background="LightCyan" BorderBrush="Black">=</Button>
+          </Grid>
+          <TextBlock Name="resultfinal"></TextBlock>
+   </StackPanel> 
+</Window>
